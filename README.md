@@ -61,10 +61,10 @@ Open the browser at:
 Here are the main routes used in the application:
 
 Route	Method	Description : 
-/chats	GET	Show all chats
-/chats/new	GET	Form to create a new chat
-/chats	POST	Add chat to the database
-/chats/:id	GET	Show a single chat
-/chats/:id	PUT	Update an existing chat
+/chats	GET	Show all chats.
+/chats/new	GET	Form to create a new chat.
+/chats	POST	Add chat to the database.
+/chats/:id	GET	Show a single chat.
+/chats/:id	PUT	Update an existing chat.
 
 ⚠️ Note: PUT requests use method-override since HTML forms don't support PUT.
