@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <H2>Chat in Detail</H2>
+    <div class="box">
+    <p class="from">Sent By : <%=chat.from%></p>
+    <div class="msg">
+        <p><%=chat.msg%></p>
+    </div>
+     <p class="to">Received By :<%=chat.to%></p>
+     <p>Time :<%=chat.created_at.toString().split(" ")[4]%></p>
+        <p>Date :<%=chat.created_at.toString().split(" ").slice(0,4).join("-")%></p>
+     <div class="update" style="display: flex; margin-right: 1rem;">
+    <a href="/chats/<%=chat._id%>/edit"style="margin-right: 1rem;">Edit</a>
+     <form method="POST" action="/chats/<%=chat._id%>?_method=Delete">
+    <button>Delete</button>
+     </form>
+     </div>
+      </div>
+</body>
+</html>

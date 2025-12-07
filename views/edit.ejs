@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Whatsapp</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <h2>Editing Your Chat</h2>
+
+    <div class="box">
+
+        <p class="from">Sent By : <%= chat.from %></p>
+
+        <!-- FORM STARTS HERE -->
+        <form method="POST" action="/chats/<%= chat._id %>?_method=PUT">
+
+            <div class="msg">
+                <textarea name="newMsg"  cols="40"><%= chat.msg %></textarea>
+            </div>
+
+            <p class="to">Received By : <%= chat.to %></p>
+            <p class="time">At : <%= chat.created_at%></p>
+
+            <button>Update Message</button>
+
+        </form>
+        <!-- FORM ENDS HERE -->
+
+    </div>
+
+</body>
+</html>

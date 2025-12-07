@@ -1,0 +1,20 @@
+body{
+    background-color: lightsalmon;
+}
+
+.box{
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    display: inline-block;
+    border: 2px solid black;
+    background-color: snow;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.msg{
+    background-color: dodgerblue;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 16px;
+}
