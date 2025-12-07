@@ -35,7 +35,7 @@ Method-Override
 Database:
 MongoDB
 
-🚀 Getting Started
+<-- 🚀 Getting Started -->
 1️⃣ Install Dependencies
 npm install
 
