@@ -1,4 +1,4 @@
- Mini Chat System (Node.js + Express + MongoDB)
+<-- Mini Chat System (Node.js + Express + MongoDB) -->
 
 A small chat-based web application built using Node.js, Express, MongoDB, and EJS.
 This project was created to practice RESTful routing, CRUD operations, server-side rendering, and database integration
@@ -60,7 +60,7 @@ Open the browser at:
 
 Here are the main routes used in the application:
 
-Route	Method	Description
+Route	Method	Description : 
 /chats	GET	Show all chats
 /chats/new	GET	Form to create a new chat
 /chats	POST	Add chat to the database
